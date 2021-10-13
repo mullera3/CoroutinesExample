@@ -58,13 +58,13 @@ class MainActivity : AppCompatActivity() {
 
     private suspend fun getResult1FromApi(): String {
         logThread("getResult1FromApi")
-        delay(1000) // Does not block thread. Just suspends the coroutine inside the thread
+        delay(10000) // Does not block thread. Just suspends the coroutine inside the thread
         return "Result #1"
     }
 
     private suspend fun getResult2FromApi(): String {
         logThread("getResult2FromApi")
-        delay(1000)
+        delay(1000000)
         return "Result #2"
     }
 
